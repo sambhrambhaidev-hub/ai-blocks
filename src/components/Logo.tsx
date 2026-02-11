@@ -47,23 +47,15 @@ export default function Logo({ className = '' }: { className?: string }) {
         fill="none"
       />
 
-      {/* Top line: outer circle to inner circle */}
+      {/* Vertical line through center */}
       <line
         x1="100"
         y1="15"
         x2="100"
-        y2="58"
-        stroke="white"
-        strokeWidth="5"
-      />
-      {/* Bottom line: inner circle to outer circle */}
-      <line
-        x1="100"
-        y1="142"
-        x2="100"
         y2="185"
         stroke="white"
-        strokeWidth="5"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
     </svg>
   )
